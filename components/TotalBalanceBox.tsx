@@ -1,6 +1,8 @@
 import React from 'react'
 
-const TotalBalanceBox = () => {
+const TotalBalanceBox = ({
+    accounts=[],totalBanks,totalCurrentBalance
+}:TotlaBalanceBoxProps) => {
   return (
     <div>
       
