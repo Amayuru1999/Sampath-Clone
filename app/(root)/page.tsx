@@ -1,3 +1,4 @@
+import HeaderBox from '@/components/HeaderBox'
 import React from 'react'
 
 const Home = () => {
@@ -5,7 +6,7 @@ const Home = () => {
     <section className='home'>
       <div className='home-content'>
         <header className='home-header'>
-            Welcome, Amayuru
+            <HeaderBox />
         </header>
       </div>
     </section>
