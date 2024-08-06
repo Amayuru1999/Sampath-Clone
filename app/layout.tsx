@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Sampath Bank",
   description: "Sampath Bank is a modern bank that offers a wide range of banking services.",
   icons:{
-    icon:'/icons/logo.svg',
+    icon:'/icons/sampath.png',
   }
 };
 
