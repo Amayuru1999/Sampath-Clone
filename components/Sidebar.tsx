@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Sidebar = () => {
+const Sidebar = ({user}:SiderbarProps) => {
   return (
-    <div>
+    <section>
       
-    </div>
+    </section>
   )
 }
 
