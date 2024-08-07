@@ -19,7 +19,15 @@ const DoughnutChart = ({accounts}:DoughnutChartProps) => {
         labels:['Bank of Ceylon','Sampath Bank','Commercial Bank']
     }
   return (
-    <Doughnut data={data}/>
+    <Doughnut data={data}
+    options={{
+        cutout:'60%',
+        plugins:{
+            legend:{
+                display:false
+            }
+        }
+    }}/>
   )
 }
 
