@@ -11,11 +11,11 @@ const Sidebar = ({user}:SiderbarProps) => {
         className='mb-12 cursor-pointer items-center gap-2'
         >
             <Image
-                src="/icons/sampath.png"
-                width={34}
-                height={34}
+                src="/icons/sampath.jpg"
+                width={164}
+                height={164}
                 alt='Sampath Bank'
-                className='size-[24px] max-xl:size-14'
+                className='size-[104px] max-xl:size-14'
             />
             <h1 className='sidebar-logo'>Sampath Bank</h1>
         </Link>
