@@ -1,10 +1,14 @@
 import React from 'react'
 
-const RightSidebar = () => {
+const RightSidebar = ({user,transactions,banks}:RightSidebarProps) => {
   return (
-    <div>
+  <aside className='right-sidebar'>
+    <section className='flex flex-col pb-8'>
+      <div className='profile-banner'/>
+    </section>
+  </aside>
       
-    </div>
+  
   )
 }
 
