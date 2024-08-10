@@ -2,6 +2,7 @@
 import React from "react";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -28,20 +29,22 @@ const MobileNav = ({ user }: MobileNavProps) => {
                 className="cursor-pointer"
             />
         </SheetTrigger>
-        <SheetContent side="left">
+        <SheetContent side="left" className="border-none bg-white">
         <Link href="/"
-        className='mb-12 cursor-pointer items-center gap-2 flex'
+        className='cursor-pointer items-center gap-1 px-4'
         >
             <Image
                 src="/icons/sampath.jpg"
                 width={164}
                 height={164}
                 alt='Sampath Bank'
-                className='size-[104px] max-xl:size-14'
             />
-            <h1 className='sidebar-logo'>Sampath Bank</h1>
+            <h1 className='text-26 font-ibm-plex-serif font-bold text-black-1'>Sampath Bank</h1>
         </Link>
-        {sidebarLinks.map((item) => {
+        <div className="mobilenav-sheet">
+            <SheetClose asChild>
+                <nav className="flex h-full flex-col gap-6 pt-16 text-white">
+                {sidebarLinks.map((item) => {
           const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`);
             return(
                 <Link href={item.route} key={item.label}
@@ -61,6 +64,10 @@ const MobileNav = ({ user }: MobileNavProps) => {
                 </Link>
             )
         })}
+                </nav>
+            </SheetClose>
+        </div>
+        
         </SheetContent>
       </Sheet>
     </section>
