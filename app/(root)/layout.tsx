@@ -15,10 +15,14 @@ export default function RootLayout({
         <div className="flex size-full flex-col">
             <div className="root-layout">
               <Image src="/icons/sampath.jpg" width={30} height={30} alt="menu icon"/>
-            </div> 
+            <div>
             <MobileNav user={loggedIn}/>
+            </div>
+            
+            </div> 
+            {children}
         </div>
-        {children}
+        
     </main>
   );
 }
